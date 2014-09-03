@@ -3,11 +3,13 @@
 Idea sharing is too slow and too dependent on verbal communication skills. Meeting schedule conflicts slow down the decision to build or not build an idea. Zeus is the idea sharing platform that solves this. You share an idea on Zeus, and coworkers can vote up your idea, comment on it, or branch from it. Producers set voting criteria and idea deadlines, so every decision will reach yes or no decision. Why? Because everyone deserves a thunderbolt!
 
 ### About the source code
-The project was seeded by meanjs.org which has great documentation below. Make sure to add new CRUD modules with the yo generator "yo meanjs:crud-module module-name"
+The project was seeded by meanjs.org which has great documentation below. Make sure to add new CRUD modules with the yo generator command "yo meanjs:crud-module module-name"
 
 Run the project with:
+```
+$ grunt
+```
 
-grunt
 
 
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
