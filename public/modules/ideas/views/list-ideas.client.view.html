@@ -1,0 +1,20 @@
+<section data-ng-controller="IdeasController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Ideas</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="idea in ideas" data-ng-href="#!/ideas/{{idea._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="idea.created | date:'medium'"></span>
+				by
+				<span data-ng-bind="idea.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="idea.title"></h4>
+            <p class="list-group-item-text" data-ng-bind="idea.content_short"></p>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!ideas.$resolved || ideas.length">
+    	No Ideas yet, why don't you <a href="/#!/ideas/create">create one</a>?
+    </div>
+</section>

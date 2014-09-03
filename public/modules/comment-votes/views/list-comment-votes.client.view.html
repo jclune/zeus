@@ -1,0 +1,19 @@
+<section data-ng-controller="CommentVotesController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Comment votes</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="commentVote in commentVotes" data-ng-href="#!/comment-votes/{{commentVote._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="commentVote.created | date:'medium'"></span>
+				by
+				<span data-ng-bind="commentVote.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="commentVote.name"></h4>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!commentVotes.$resolved || commentVotes.length">
+    	No Comment votes yet, why don't you <a href="/#!/comment-votes/create">create one</a>?
+    </div>
+</section>
