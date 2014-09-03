@@ -1,3 +1,15 @@
+# Zeus
+### An intracompany thunderstorm of ideas
+Idea sharing is that is too slow and too dependent on verbal communication skills. Meetings slow down decisions to build or not build an idea. Zeus solves this by providing an idea sharing platform, where coworkers can vote up your idea, comment, or branch from it. Producers set voting criteria and idea deadlines, which determines a yes or no decsion for each idea. Why? Because everyone deserves a thunderbolt!
+
+### About the source code
+The project was seeded by meanjs.org which has great documentation below. Make sure to add new CRUD modules with the yo generator "yo meanjs:crud-module module-name"
+
+Run the project with:
+
+grunt
+
+
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
