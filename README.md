@@ -5,7 +5,7 @@ Idea sharing is too slow and too dependent on verbal communication skills. Meeti
 ### About the source code
 The project was seeded by meanjs.org which has great documentation below. The easiest way to start a custom module is with the yo generator command "yo meanjs:crud-module module-name". Add node modules with "npm install module-name --save" or dev-only modules with "npm install module-name --save-dev". Add front-end components with "bower install component-name --save" (For dynamic UI components, try to find libraries designed for angular, otherwise you must create custom angular directives). I plan to replace the mongoose-based CRUD controllers with sails, which uses a database agnostic ORM and automatically makes a RESTful API.
 
-Run the project with:
+### Run the project with:
 ```
 $ grunt
 ```
@@ -41,9 +41,9 @@ bower.json <br/>
 public/application.js <br/>
 public/config.js <br/>
 
-Back end directory: app
+Back end directory: **app**
 
-Front end directory: public
+Front end directory: **public**
 
 
 ###About the framework:
