@@ -21,7 +21,7 @@ $ brew install mongodb
 $ sudo mkdir -p /data/db
 $ mongod
 ```
-Make sure make sure the mongodb binary is in your $PATH and you have read/write permissions to /data/db.
+Ensure the mongodb binary is in your $PATH and you have read/write permissions to /data/db.
 
 If you are new to node, make sure you have it along with globally installed grunt and bower:
 ```
@@ -33,17 +33,17 @@ $ npm install -g bower
 ```
 Generally "npm install" or "bower install" are the first commands to use in a node project, but these tasks are set in gruntfile.js and will be ran automatically by the command "grunt". 
 
-Notable files are:
-package.json
-gruntfile.js
-bower.json
-public/application.js
-public/config.js
+Notable files are:\n
+package.json\n
+gruntfile.js\n
+bower.json\n
+public/application.js\n
+public/config.js\n
 
-Back end:
+Back end directory:
 app
 
-Front end:
+Front end directory:
 public
 
 
