@@ -3,14 +3,51 @@
 Idea sharing is too slow and too dependent on verbal communication skills. Meeting schedule conflicts slow down the decision to build or not build an idea. Zeus is the idea sharing platform that solves this. You share an idea on Zeus, and coworkers can vote up your idea, comment on it, or branch from it. Producers set voting criteria and idea deadlines, so every decision will reach yes or no decision. Why? Because everyone deserves a thunderbolt!
 
 ### About the source code
-The project was seeded by meanjs.org which has great documentation below. Make sure to add new CRUD modules with the yo generator command "yo meanjs:crud-module module-name"
+The project was seeded by meanjs.org which has great documentation below. The easiest way to start a custom module is with the yo generator command "yo meanjs:crud-module module-name". Add node modules with "npm install module-name --save" or dev-only modules with "npm install module-name --save-dev". Add front-end components with "bower install component-name --save" (For dynamic UI components, try to find libraries designed for angular, otherwise you must create custom angular directives). I plan to replace the mongoose-based CRUD controllers with sails, which uses a database agnostic ORM and automatically makes a RESTful API.
 
 Run the project with:
 ```
 $ grunt
 ```
+Make sure a mongodb is running by executing this in a seperate tab:
+```
+$ mongod
+```
+If you are new to mongodb, make sure to install it with homebrew: 
+```
+$ brew update
+$ brew doctor
+$ brew install mongodb
+$ sudo mkdir -p /data/db
+$ mongod
+```
+Make sure make sure the mongodb binary is in your $PATH and you have read/write permissions to /data/db.
+
+If you are new to node, make sure you have it along with globally installed grunt and bower:
+```
+$ brew update
+$ brew doctor
+$ brew install node
+$ npm install -g grunt-cli
+$ npm install -g bower
+```
+Generally "npm install" or "bower install" are the first commands to use in a node project, but these tasks are set in gruntfile.js and will be ran automatically by the command "grunt". 
+
+Notable files are:
+package.json
+gruntfile.js
+bower.json
+public/application.js
+public/config.js
+
+Back end:
+app
+
+Front end:
+public
 
 
+###About the framework:
 
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
