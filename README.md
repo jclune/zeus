@@ -33,18 +33,17 @@ $ npm install -g bower
 ```
 Generally "npm install" or "bower install" are the first commands to use in a node project, but these tasks are set in gruntfile.js and will be ran automatically by the command "grunt". 
 
-Notable files are:\n
-package.json\n
-gruntfile.js\n
-bower.json\n
-public/application.js\n
-public/config.js\n
+Notable files are:
 
-Back end directory:
-app
+package.json <br/>
+gruntfile.js <br/>
+bower.json <br/>
+public/application.js <br/>
+public/config.js <br/>
 
-Front end directory:
-public
+Back end directory: app
+
+Front end directory: public
 
 
 ###About the framework:
